@@ -1,0 +1,76 @@
+.header-menu {
+
+    height: 100%;
+}
+.header{
+    display: flex;
+    width: 100%;
+    height: 64px;
+    align-items: center;
+    justify-content: space-between;
+}
+img {
+    width: 146px;
+    height: 100%;
+    margin-bottom: -3px;
+    cursor: pointer;
+}
+.search {
+    position: relative; 
+}
+input {
+    width: 350px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f3f3f3;
+    border: 2px solid rgba(0,0,0,0);
+    border-radius: 6px;
+    padding: 10px 40px 10px 15px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all ease .3s;
+}
+.search i-feather {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-60%); 
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    pointer-events: none;
+}
+input:focus{
+    background-color: #fff;
+    border: 2px solid #f2453f;
+}
+.search i-feather{
+    color: #f2453f;
+}
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+ul > li {
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+}
+ul > li:hover{
+color: #f2453f;
+}
+ul > li:hover i-feather {
+    fill: #f2453f; 
+}
+ul > li:first-child {
+    margin-left: 0; 
+}
+
+i-feather {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}

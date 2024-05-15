@@ -1,19 +1,12 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
+  template: '<router-outlet />',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, RouterModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [RouterOutlet]
 })
 export class AppComponent {
-  products= [
-    {name:"Selahattin", price:30, discontinued:true},
-    {name:"Mehmet", price:30, discontinued:false},
-    {name:"Deneme", price:30, discontinued:true},
-  ]
   
 }
